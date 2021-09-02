@@ -1,5 +1,5 @@
 FROM maven:3-jdk-11 as baremaps-builder
-ARG BRANCH_TO_CHECKOUT=main
+ARG BRANCH_TO_CHECKOUT=import
 # Install utilities (inc nodejs with custom debian repo)
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
     && apt-get update \
